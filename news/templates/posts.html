@@ -20,7 +20,7 @@ Posts
             <!-- currency - это кастомный фильтр, вы можете найти его в файле
             custom_filters.py в папке tamplatetags, я поставил его только
             в тексте постов, но если нужно вы можете применить его например
-            к заголовку поста {{ post.name|currensy }}-->
+            к заголовку поста post.name|currensy-->
             <p>{{ post.text|currency|truncatewords:20 }}</p>
             <p>Дата: {{ post.creation_time|date:"d.m.Y H:i" }}</p>
             <p>Рейтинг: {{ post.rating }}</p>
